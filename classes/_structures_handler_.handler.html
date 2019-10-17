@@ -113,6 +113,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_structures_handler_.handler.html#getcommand" class="tsd-kind-icon">get<wbr>Command</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_structures_handler_.handler.html#loadcommands" class="tsd-kind-icon">load<wbr>Commands</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_structures_handler_.handler.html#loadevents" class="tsd-kind-icon">load<wbr>Events</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_structures_handler_.handler.html#runcommand" class="tsd-kind-icon">run<wbr>Command</a></li>
 							</ul>
 						</section>
 					</div>
@@ -124,7 +125,7 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Handler<span class="tsd-signature-symbol">(</span>client<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, dirs<span class="tsd-signature-symbol">: </span><a href="../interfaces/_interfaces_dirs_.dirs.html" class="tsd-signature-type">Dirs</a>, prefix<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, runCommands<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_structures_handler_.handler.html" class="tsd-signature-type">Handler</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Handler<span class="tsd-signature-symbol">(</span>client<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, dirs<span class="tsd-signature-symbol">: </span><a href="../interfaces/_interfaces_dirs_.dirs.html" class="tsd-signature-type">Dirs</a>, prefix<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_structures_handler_.handler.html" class="tsd-signature-type">Handler</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -143,9 +144,6 @@
 								</li>
 								<li>
 									<h5>prefix: <span class="tsd-signature-type">string</span></h5>
-								</li>
-								<li>
-									<h5>runCommands: <span class="tsd-signature-type">boolean</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="_structures_handler_.handler.html" class="tsd-signature-type">Handler</a></h4>
@@ -208,7 +206,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in structures/Handler.ts:86</li>
+									<li>Defined in structures/Handler.ts:87</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -231,7 +229,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in structures/Handler.ts:89</li>
+									<li>Defined in structures/Handler.ts:90</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h4>
@@ -248,7 +246,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in structures/Handler.ts:83</li>
+									<li>Defined in structures/Handler.ts:84</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -265,16 +263,16 @@
 					<a name="loadcommands" class="tsd-anchor"></a>
 					<h3>load<wbr>Commands</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">load<wbr>Commands<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">load<wbr>Commands<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in structures/Handler.ts:39</li>
+									<li>Defined in structures/Handler.ts:38</li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -282,7 +280,7 @@
 					<a name="loadevents" class="tsd-anchor"></a>
 					<h3>load<wbr>Events</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">load<wbr>Events<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">load<wbr>Events<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -291,7 +289,30 @@
 									<li>Defined in structures/Handler.ts:61</li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="runcommand" class="tsd-anchor"></a>
+					<h3>run<wbr>Command</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">run<wbr>Command<span class="tsd-signature-symbol">(</span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Message</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in structures/Handler.ts:23</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>message: <span class="tsd-signature-type">Message</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -312,11 +333,11 @@
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_interfaces_options_.html">"interfaces/options"</a>
 					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_structures_antispam_.html">"structures/<wbr>Anti<wbr>Spam"</a>
+					</li>
 					<li class="current tsd-kind-external-module">
 						<a href="../modules/_structures_handler_.html">"structures/<wbr>Handler"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_structures_antispam_.html">"structures/anti<wbr>Spam"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_structures_checkcurse_.html">"structures/check<wbr>Curse"</a>
@@ -371,6 +392,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_structures_handler_.handler.html#loadevents" class="tsd-kind-icon">load<wbr>Events</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_structures_handler_.handler.html#runcommand" class="tsd-kind-icon">run<wbr>Command</a>
 							</li>
 						</ul>
 					</li>
